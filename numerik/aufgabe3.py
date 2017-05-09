@@ -1,5 +1,3 @@
-# Blatt 03
-# Aufgabe 5
 import numpy as np
 import math
 
@@ -27,9 +25,6 @@ def calculateEpsilon(r, s):
             if tmp > epsilon:
                 epsilon = tmp
     return epsilon
-
-
-# Aufgabe 4
 
 
 def mult_matrix(M, N):
