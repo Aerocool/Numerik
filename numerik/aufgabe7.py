@@ -131,10 +131,10 @@ print "Standard-Newton_Verfahren:",\
     "\n x_4 = ", newtonVerfahren(function.aufgabe3, function.aufgabe3Abgeleitet, x0, 4)
 
 print "Variante 1:",\
-    "\n x_1 = ", newtonVerfahrenVariante1(function.aufgabe3, function.aufgabe3Abgeleitet, x0, 1, Decimal(1)),\
-    "\n x_2 = ", newtonVerfahrenVariante1(function.aufgabe3, function.aufgabe3Abgeleitet, x0, 2, Decimal(1)),\
-    "\n x_3 = ", newtonVerfahrenVariante1(function.aufgabe3, function.aufgabe3Abgeleitet, x0, 3, Decimal(1)),\
-    "\n x_4 = ", newtonVerfahrenVariante1(function.aufgabe3, function.aufgabe3Abgeleitet, x0, 100, Decimal(1))
+    "\n x_1 = ", newtonVerfahrenVariante1(function.aufgabe3, function.aufgabe3Abgeleitet, x0, 1, Decimal(3)),\
+    "\n x_2 = ", newtonVerfahrenVariante1(function.aufgabe3, function.aufgabe3Abgeleitet, x0, 2, Decimal(3)),\
+    "\n x_3 = ", newtonVerfahrenVariante1(function.aufgabe3, function.aufgabe3Abgeleitet, x0, 3, Decimal(3)),\
+    "\n x_4 = ", newtonVerfahrenVariante1(function.aufgabe3, function.aufgabe3Abgeleitet, x0, 4, Decimal(3))
 
 print "Variante 2:",\
     "\n x_1 = ", newtonVerfahrenVariante2(function.aufgabe3, function.aufgabe3Abgeleitet, function.aufgabe3AbgeleitetAbgeleitet, x0, 1),\
