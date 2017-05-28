@@ -101,14 +101,15 @@ for i in range(0, len(m)):
         y[j] = auswertung(x[j], d, x_interpol)
     #pylab.subplot(221+i)
     #pylab.plot(x, y)
+    #pylab.title("m=" + str(m[i]))
 
-y = fillY(x, f.aufgabe2b) # Originale Funktion
+y = fillY(x, f.aufgabe2b)
 
 #pylab.subplot(224)
 #pylab.plot(x, y)
 #pylab.show() # vorderes '#' entfernen, wenn gezeichnet werden soll
 
-#Aufgabe 2d Sollte die Graphikanzeige nicht funktionieren, ist
+#Aufgabe 2d Sollte die Grafikanzeige nicht funktionieren, ist eine JPG-Datei im Zip hinterlegt
 m = [6, 7, 8]
 t = np.linspace(0, 1, 100) # 100 linearly spaced numbers
 x = np.empty(len(t), float)
@@ -125,9 +126,9 @@ for i in range(0, len(m)):
     for j in range(0, len(t)):
         x[j] = auswertung(t[j], d_x, t_approx)
         y[j] = auswertung(t[j], d_y, t_approx)
-        pylab.subplot(pos)
-        pylab.plot(x, y)
-        pylab.title("m="+str(m[i]))
+    pylab.subplot(pos)
+    pylab.plot(x, y)
+    pylab.title("m="+str(m[i]))
 
 pylab.subplot(224)
 pylab.plot(fillY(t, f.aufgabe2dX), fillY(t, f.aufgabe2dY))
